@@ -17,10 +17,12 @@
 }
 .infoContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 30px;
 }
 .poster {
+  width: 256px;
+  height: 384px;
   border-radius: 20px;
 }
 .info {
@@ -43,4 +45,24 @@
 }
 .linkInfo:hover {
   text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  .infoContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .poster {
+    width: 356px;
+    height: 484px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .poster {
+    width: 400px;
+    height: 584px;
+    border-radius: 20px;
+  }
 }

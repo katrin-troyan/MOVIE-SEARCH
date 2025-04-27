@@ -15,4 +15,6 @@
   border-radius: 20px;
   background-color: #d36c7d;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 100%;
+  overflow-wrap: break-word;
 }

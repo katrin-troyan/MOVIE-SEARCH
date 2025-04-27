@@ -13,6 +13,17 @@ export default function MovieList({ movies }) {
             state={location}
             className={css.movieTitle}
           >
+            <img
+              src={`https://image.tmdb.org/t/p/w400${movie.poster_path}`}
+              alt={movie.title}
+              className={css.poster}
+            />
+          </Link>
+          <Link
+            to={`/movies/${movie.id}`}
+            state={location}
+            className={css.movieTitle}
+          >
             {movie.title}
           </Link>
         </li>
